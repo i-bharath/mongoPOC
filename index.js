@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const routes = require('./routes/routes.js');
 const app = express();
 
-const mongoURI = 'mongodb+srv://bharath:bharath123@cluster0.rccbs0v.mongodb.net/?retryWrites=true&w=majority';
+const mongoURI = 'mongodb+srv://bharath:<password>@cluster0.rccbs0v.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(mongoURI, { useNewUrlParser: true})
 const conn = mongoose.connection;
 
